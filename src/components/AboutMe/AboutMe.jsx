@@ -5,7 +5,7 @@ import './AboutMe.scss';
 const AboutMe = (props) => {
 
     return (
-        <div>
+        <div id="about-me" className="fullscreen-contailer">
 
         </div>
     );

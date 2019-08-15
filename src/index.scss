@@ -1,5 +1,4 @@
 @import "./variables.scss";
-@import-normalize;
 
 body, html {
   margin: 0px;
@@ -11,6 +10,7 @@ body {
   font-family: $font-text;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 .black {
@@ -18,12 +18,12 @@ body {
 }
 
 .bold {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .text-medium {
   font-family: $font-title;
-  font-size: 2.25em;
+  font-size: 2em;
   color: white;
 }
 
@@ -38,9 +38,35 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2.25em;
+  font-size: 2em;
   cursor: pointer;
   background-color: transparent;
   padding: 0.4em;
   font-weight: 600;
+}
+
+.container {
+  overflow: auto;
+}
+
+h1 {
+  font-family: $font-title;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: $font-title;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+p {
+  font-family: $font-text;
+  font-size: 2em;
+}
+
+.fullscreen-contailer {
+  height: 100vh;
+  margin-left: 4em;
 }

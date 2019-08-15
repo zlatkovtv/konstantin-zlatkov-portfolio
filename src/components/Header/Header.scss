@@ -4,19 +4,26 @@
     z-index: 10000;
     width: 100%;
     background-color: white;
+    position: fixed;
+    display: flex;
+    height: 6em;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
 }
 
 #home-button {
+    position: fixed;
     display: inline-block;
     background: linear-gradient(0.25turn, $color-secondary, $color-accent-numb);
-    margin-left: 6rem;
+    left: 6rem;
+    top: 0px;
     text-align: left;
     padding: 2rem;
 }
 
 #navigation {
-    float: right;
-    padding: 2em;
+    padding-right: 4em;
 }
 
 .nav-link {

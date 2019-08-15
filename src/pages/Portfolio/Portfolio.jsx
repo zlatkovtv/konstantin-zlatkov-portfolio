@@ -17,18 +17,10 @@ class Portfolio extends React.Component {
     render() {
         return (
             <div className="container">
-                <Home id="home">
-
-                </Home>
-                <AboutMe id="about-me">
-
-                </AboutMe>
-                <Projects id="projects">
-
-                </Projects>
-                <Contact id="contact">
-
-                </Contact>
+                <Home/>
+                <AboutMe />
+                <Projects />
+                <Contact />
             </div>
         );
     }

@@ -1,4 +1,28 @@
-.container--fullscreen {
-    width: 100vw;
-    height: 100vh;
+@import "../../variables.scss";
+
+#home {
+    width: calc(100% - 8em);
+}
+
+#background {
+    background-color: $color-primary;
+    background-image: -webkit-linear-gradient(-20deg, $color-primary 50%, $color-secondary 50%);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#home-content {
+    padding: 25vh 12vw;
+}
+
+#main-title {
+    color: $color-accent-bright;
+}
+
+#ps-content {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
