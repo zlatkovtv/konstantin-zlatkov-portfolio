@@ -1,0 +1,24 @@
+#sidebar {
+    width: 80px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-media-icon {
+    display: block;
+    color: black;
+    width: 50% !important;
+    height: auto;
+    margin: 0 auto;
+    padding: 25% 0;
+}
+
+.social-media-icon:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+@import "../../variables.scss";
+
+#header {
+    z-index: 10000;
+    width: 100%;
+    background-color: white;
+}
+
+#home-button {
+    display: inline-block;
+    background: linear-gradient(0.25turn, $color-secondary, $color-accent-numb);
+    margin-left: 6rem;
+    text-align: left;
+    padding: 2rem;
+}
+
+#navigation {
+    float: right;
+    padding: 2em;
+}
+
+.nav-link {
+    margin-left: 2rem;
+    color: $color-primary;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    width: 2.5em;
+    bottom: 0px;
+    left: 0px;
+    border-bottom: 4px solid $color-accent-bright;
+}
+
+#resume-button {
+    margin-left: 2rem;
+}

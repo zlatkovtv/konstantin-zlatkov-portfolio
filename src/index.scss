@@ -1,0 +1,46 @@
+@import "./variables.scss";
+@import-normalize;
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+body {
+  font-family: $font-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.text-medium {
+  font-family: $font-title;
+  font-size: 2.25em;
+  color: white;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.outlined-button {
+  border: 3px solid $color-accent-bright;
+  border-radius: 8px;
+  color: $color-accent-bright;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.25em;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0.4em;
+  font-weight: 600;
+}
