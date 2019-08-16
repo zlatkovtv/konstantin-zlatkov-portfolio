@@ -4,8 +4,8 @@ import './Projects.scss';
 
 const Projects = (props) => {
     return (
-        <div className="container">
-            
+        <div >
+           
         </div>
     );
 };

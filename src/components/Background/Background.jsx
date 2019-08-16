@@ -24,10 +24,12 @@ class Background extends React.Component {
     componentDidUpdate(prevProps) {
         if(this.props.growPercentage !== prevProps.growPercentage) 
         {
+            var gradientConstant = 50 * (1 - this.props.growPercentage);
             this.setState({
                 style: {
                     width: `calc(100% - 4em * ${this.props.growPercentage})`,
-                    marginTop: `calc(6em * ${this.props.growPercentage})`
+                    marginTop: `calc(6em * ${this.props.growPercentage})`,
+                    backgroundImage: `-webkit-linear-gradient(-20deg, #161616 ${50 + gradientConstant}%, #242530 ${50 - gradientConstant}%)`
                 }
             });
         }

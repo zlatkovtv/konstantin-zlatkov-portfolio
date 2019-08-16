@@ -34,7 +34,7 @@ body {
 
 .outlined-button {
   border: 3px solid $color-accent-bright;
-  border-radius: 8px;
+  border-radius: $border-radius;
   color: $color-accent-bright;
   text-align: center;
   text-decoration: none;
@@ -50,29 +50,42 @@ h1 {
   font-family: $font-title;
   font-size: 4em;
   font-weight: 900;
-}
-
-h2 {
-  font-family: $font-title;
-  font-size: 3em;
-  font-weight: 900;
+  color: $color-accent-bright;
 }
 
 p {
   font-family: $font-text;
-  font-size: 2em;
+  font-size: 1.5em;
+  line-height: 1.3;
 }
 
-.fullscreen-contailer {
+.fullscreen-container {
   height: 100vh;
   margin: 0 4em;
 }
 
-[data-aos="enlarge-container"] {
-  transition-property: width;
+.container {
+  margin: 0 4em;
+}
 
-  &.aos-animate {
-    width: 200px;
-  }
+h2 {
+  color: white;
+  font-size: 3.7em;
+  font-family: $font-title;
+  font-weight: 900;
+}
 
+h3 {
+  color: white;
+  font-size: 2em;
+  font-family: $font-title;
+  font-weight: 900;
+}
+
+.content {
+  padding: 10vh 6vw 0 12vw;
+}
+
+.center {
+  text-align: center;
 }

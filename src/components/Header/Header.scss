@@ -19,7 +19,9 @@
     left: 6rem;
     top: 0px;
     text-align: left;
-    padding: 2rem;
+    padding: 2em;
+    transform: scale(1); /* you need a scale here to allow it to transition in both directions */
+    transition: 0.15s all ease;
 }
 
 #navigation {

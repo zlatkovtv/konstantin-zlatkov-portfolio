@@ -4,8 +4,12 @@ import './Contact.scss';
 
 const Contact = (props) => {
     return (
-        <div className="container">
-            
+        <div className="center">
+           <p id="contact-text">I will be applying for OPT after I graduate
+            in December 2019. I am looking for a wonderful
+            company, who are willing to sponsor me after the 3-year
+            duration of the program.
+            </p>
         </div>
     );
 };

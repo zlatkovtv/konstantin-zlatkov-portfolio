@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+import Content from '../../components/Content/Content';
 import Home from '../../components/Home/Home';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import Projects from '../../components/Projects/Projects';
@@ -28,24 +29,30 @@ class App extends React.Component {
 					<Header growPercentage={this.state.growPercentage} />
 					<Sidebar />
 					<Home />
-					<AboutMe />
-					<Projects />
-					<Contact />
+					<Content id={"about-me"} title={"about me"}>
+						<AboutMe />
+					</Content>
+					<Content id={"projects"} title={"projects"}>
+						<Projects />
+					</Content>
+					<Content id={"contact"} title={"get in touch"} fullscreen>
+						<Contact />
+					</Content>
 				</Router>
 			</div>
 		);
 	}
 
 	componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
+		window.addEventListener('scroll', this.handleScroll);
 	}
 
 	handleScroll = () => {
-        var growPercentage = getTransitionPercentage();
-        this.setState({
-            growPercentage: growPercentage
-        });
-    };
+		var growPercentage = getTransitionPercentage();
+		this.setState({
+			growPercentage: growPercentage
+		});
+	};
 }
 
 export default App;

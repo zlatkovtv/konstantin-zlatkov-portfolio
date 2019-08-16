@@ -7,14 +7,15 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            linkStyle: null,
+            homeButtonStyle: null
         }
     }
 
     render() {
         return (
             <div id="header">
-                <div id="home-button" onClick={() => this.jumpToTarget("#home")}>
+                <div style={this.state.homeButtonStyle} id="home-button" onClick={() => this.jumpToTarget("#home")}>
                     <div className="text-medium black">
                         Konstantin
                     </div>
@@ -23,9 +24,9 @@ class Header extends React.Component {
                     </div>
                 </div>
                 <nav id="navigation">
-                    <a className="text-medium nav-link bold" style={this.state.style} onClick={() => this.jumpToTarget("#about-me")}>about me</a>
-                    <a className="text-medium nav-link bold" style={this.state.style} id="">projects</a>
-                    <a className="text-medium nav-link bold" style={this.state.style} id="">contact</a>
+                    <a className="text-medium nav-link bold" style={this.state.linkStyle} onClick={() => this.jumpToTarget("#about-me")}>about me</a>
+                    <a className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#projects")} id="">projects</a>
+                    <a className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#contact")} id="">contact</a>
                     <button id="resume-button" className="outlined-button">
                         resume
                     </button>
@@ -46,15 +47,19 @@ class Header extends React.Component {
 
         if(this.props.growPercentage < 0.5) {
             this.setState({
-                style: {
+                linkStyle: {
                     color: `white`
+                },
+                homeButtonStyle: {
+                    padding: "0.7em 2em"
                 }
             });
         }
 
         if(this.props.growPercentage >= 0.5) {
             this.setState({
-                style: null
+                linkStyle: null,
+                homeButtonStyle: null
             });
         }
     } 
