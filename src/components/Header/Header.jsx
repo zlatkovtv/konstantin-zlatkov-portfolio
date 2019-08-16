@@ -1,34 +1,63 @@
 import React from 'react';
 import jump from 'jump.js'
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import './Header.scss';
 
-const Header = (props) => {
-    const jumpToTarget = (target) => {
-        jump(target);
-    };
+class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
 
-    return (
-        <div id="header">
-            <div id="home-button" onClick={() => jumpToTarget("#home")}>
-                <div className="text-medium black">
-                    Konstantin
+        }
+    }
+
+    render() {
+        return (
+            <div id="header">
+                <div id="home-button" onClick={() => this.jumpToTarget("#home")}>
+                    <div className="text-medium black">
+                        Konstantin
+                    </div>
+                    <div className="text-medium black">
+                        Zlatkov
+                    </div>
                 </div>
-                <div className="text-medium black">
-                    Zlatkov
-                </div>
+                <nav id="navigation">
+                    <a className="text-medium nav-link bold" style={this.state.style} onClick={() => this.jumpToTarget("#about-me")}>about me</a>
+                    <a className="text-medium nav-link bold" style={this.state.style} id="">projects</a>
+                    <a className="text-medium nav-link bold" style={this.state.style} id="">contact</a>
+                    <button id="resume-button" className="outlined-button">
+                        resume
+                    </button>
+                </nav>
             </div>
-            <nav id="navigation">
-                <a className="text-medium nav-link bold" onClick={() => jumpToTarget("#about-me")}>about me</a>
-                <a className="text-medium nav-link bold" id="">projects</a>
-                <a className="text-medium nav-link bold" id="">contact</a>
-                <button id="resume-button" className="outlined-button">
-                    resume
-                </button>
-            </nav>
-        </div>
-    );
+        );
+    }
+
+    jumpToTarget = (target) => {
+        jump(target);
+    }
+
+    componentDidUpdate(prevProps) {
+        if(this.props.growPercentage === prevProps.growPercentage) 
+        {
+            return;
+        }
+
+        if(this.props.growPercentage < 0.5) {
+            this.setState({
+                style: {
+                    color: `white`
+                }
+            });
+        }
+
+        if(this.props.growPercentage >= 0.5) {
+            this.setState({
+                style: null
+            });
+        }
+    } 
 };
 
 export default Header;

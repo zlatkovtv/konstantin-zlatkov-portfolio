@@ -4,6 +4,7 @@ body, html {
   margin: 0px;
   padding: 0px;
   width: 100%;
+  height: 100%;
 }
 
 body {
@@ -45,10 +46,6 @@ body {
   font-weight: 600;
 }
 
-.container {
-  overflow: auto;
-}
-
 h1 {
   font-family: $font-title;
   font-size: 4em;
@@ -68,5 +65,14 @@ p {
 
 .fullscreen-contailer {
   height: 100vh;
-  margin-left: 4em;
+  margin: 0 4em;
+}
+
+[data-aos="enlarge-container"] {
+  transition-property: width;
+
+  &.aos-animate {
+    width: 200px;
+  }
+
 }

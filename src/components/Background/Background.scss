@@ -1,0 +1,9 @@
+@import "../../variables.scss";
+
+#background {
+    background-color: $color-primary;
+    background-image: -webkit-linear-gradient(-20deg, $color-primary 50%, $color-secondary 50%);
+    height: 100vh;
+    position: fixed;
+    z-index: -10000;
+}

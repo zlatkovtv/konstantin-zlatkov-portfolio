@@ -1,15 +1,6 @@
 @import "../../variables.scss";
 
 #home {
-    width: calc(100% - 8em);
-}
-
-#background {
-    background-color: $color-primary;
-    background-image: -webkit-linear-gradient(-20deg, $color-primary 50%, $color-secondary 50%);
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
