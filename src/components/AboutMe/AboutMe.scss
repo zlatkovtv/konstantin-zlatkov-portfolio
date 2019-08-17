@@ -22,34 +22,22 @@
     margin-left: 15px;
 }
 
-.row {
-    display: flex;
-}
-
-.col:first-child {
+#profile-container-inner:first-child {
     margin-bottom: 3em;
 }
 
 @media(min-width: $media-breakpoint) {
-    .col {
+    #profile-container-inner-6 {
         max-width: 50%;
         flex: 0 0 50%;
 
     }
-
-    .row {
-        display: flex;
-    }
 }
 
 @media(min-width: 0px) and (max-width: $media-breakpoint) {
-    .col {
+    #profile-container-inner-6 {
         width: 100%;
         float: left;
-    }
-
-    .row {
-        display: block;
     }
 }
 
@@ -65,3 +53,20 @@
     margin: 0.5em auto;
     color: white;
   }
+
+#profile-container {
+    display: flex;
+}
+
+
+@media(min-width: $media-breakpoint) {
+    #profile-container {
+        display: flex;
+    }
+}
+
+@media(min-width: 0px) and (max-width: $media-breakpoint) {
+    #profile-container {
+        display: block;
+    }
+}

@@ -1,4 +1,55 @@
-.container--fullscreen {
-    width: 100vw;
-    height: 100vh;
+@import "../../variables.scss";
+
+#repo-container {
+    flex-wrap: wrap;
+    padding: 1em 1em 0 0;
+    display: flex;
+}
+
+@media(min-width: $media-breakpoint-xs) {
+    #repo-container {
+        display: flex;
+        }
+    }
+
+@media(min-width: 0px) and (max-width: $media-breakpoint-xs) {
+    #repo-container {
+        display: block;
+    }
+}
+
+.repo {
+    margin: 0 0 1em 1em;
+    background-color: $color-secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1em 2em;
+}
+
+.repo p {
+    font-size: 1em;
+    flex: 1 0 auto;
+}
+
+@media(min-width: 0) and (max-width: $media-breakpoint-xs){
+    .repo {
+        width: calc(100% - 1em);
+        float: left;
+    }
+}
+
+@media(min-width: $media-breakpoint-xs) and (max-width: $media-breakpoint){
+    .repo {
+        max-width: calc(50% - 1em);
+        flex: 1 1 calc(50% - 1em);
+    }
+}
+
+@media(min-width: $media-breakpoint) {
+    .repo {
+        max-width: calc(33.333333% - 1em);
+        flex: 1 1 calc(33.333333% - 1em);
+    }
 }

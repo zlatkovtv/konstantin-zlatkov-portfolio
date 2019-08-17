@@ -5,8 +5,8 @@ import profileImage from '../../assets/profile-image.jpg';
 
 const AboutMe = (props) => {
     return (
-        <div className="row">
-            <div className="col">
+        <div className="profile-container">
+            <div className="profile-container-inner">
                 <div id="profile-image-container" data-aos="zoom-out">
                     <img id="profile-image" src={profileImage} />
                     <div id="profile-image-border">
@@ -14,7 +14,7 @@ const AboutMe = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="col">
+            <div className="profile-container-inner">
                 <p>Hey there! I'm Konstantin, a Software Engineer
                     based in Los Angeles. I develop functional websites
                     with beautiful UIs and build stable and modern APIs.</p>
