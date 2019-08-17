@@ -1,10 +1,25 @@
-.container--fullscreen {
-    width: 100vw;
-    height: 100vh;
-}
-
+@import "../../variables.scss";
 #contact-text {
     max-width: 25em;
     margin: 0 auto;
     padding: 2em 0;
+}
+
+.contact-button {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3em;
+    border-radius: 8px;
+    background: linear-gradient(0.25turn, $color-secondary, $color-accent-numb);
+    margin: 1em;
+    cursor: pointer;
+}
+
+.contact-button-icon {
+    margin-right: 0.5em;
+}
+
+.contact-button span {
+    font-size: 1.5em;
 }

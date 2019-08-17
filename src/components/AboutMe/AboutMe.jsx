@@ -5,7 +5,7 @@ import profileImage from '../../assets/profile-image.jpg';
 
 const AboutMe = (props) => {
     return (
-        <div className="profile-container">
+        <div id="profile-container">
             <div className="profile-container-inner">
                 <div id="profile-image-container" data-aos="zoom-out">
                     <img id="profile-image" src={profileImage} />

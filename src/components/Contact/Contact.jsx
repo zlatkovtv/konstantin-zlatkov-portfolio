@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import './Contact.scss';
 
@@ -11,8 +13,14 @@ const Contact = (props) => {
             duration of the program.
             </p>
             <div>
-                <button></button>
-                <button></button>
+                <span className="contact-button">
+                    <FontAwesomeIcon size={"2x"} className="contact-button-icon" icon={faLinkedin} />
+                    <span>Visit my LinkedIn</span>
+                </span>
+                <span className="contact-button">
+                    <FontAwesomeIcon size={"2x"} className="contact-button-icon" icon={faGithub} />
+                    <span>Email me</span>
+                </span>
             </div>
         </div>
     );

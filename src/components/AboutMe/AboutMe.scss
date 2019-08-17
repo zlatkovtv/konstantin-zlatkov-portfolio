@@ -22,12 +22,12 @@
     margin-left: 15px;
 }
 
-#profile-container-inner:first-child {
+.profile-container-inner:first-child {
     margin-bottom: 3em;
 }
 
 @media(min-width: $media-breakpoint) {
-    #profile-container-inner-6 {
+    .profile-container-inner {
         max-width: 50%;
         flex: 0 0 50%;
 
@@ -35,7 +35,7 @@
 }
 
 @media(min-width: 0px) and (max-width: $media-breakpoint) {
-    #profile-container-inner-6 {
+    .profile-container-inner {
         width: 100%;
         float: left;
     }

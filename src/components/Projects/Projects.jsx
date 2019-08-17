@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFolderOpen } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import './Projects.scss';
 
@@ -21,13 +24,16 @@ class Projects extends React.Component {
     render() {
         const repos = this.state.repos.map(repo => {
             return (
-                <div className="repo">
+                <div className="repo" data-aos="fade-right">
                     <div>
-                        <header></header>
+                        <header className="repo-header">
+                            <FontAwesomeIcon className="folder-icon" icon={faFolderOpen} />
+                            <FontAwesomeIcon onClick={() => this.goToGithub(repo.html_url)} className="github-link" icon={faGithub} />
+                        </header>
                         <h3>{repo.name}</h3>
                         <p>{repo.description}</p>
                     </div>
-                    <footer></footer>
+                    {/* <footer>Written in {repo.language}</footer> */}
                 </div>
             );
         });
@@ -42,6 +48,10 @@ class Projects extends React.Component {
     componentDidMount() {
         this.getGithubRepos();
     }
+
+    goToGithub = (link) => {
+        window.open(link, "_blank")
+    };
 
     getGithubRepos = () => {
         fetch(this.state.gitPath)
