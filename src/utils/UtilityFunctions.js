@@ -15,3 +15,7 @@ export const getWindowDimensions = () => {
         width
     };
 };
+
+export const goToSocialMedia = (link) => {
+    window.open(link, "_blank")
+};

@@ -26,7 +26,7 @@ class App extends React.Component {
 			<div className="App">
 				<Background growPercentage={this.state.growPercentage} />
 				<Header growPercentage={this.state.growPercentage} />
-				<Sidebar />
+				<Sidebar growPercentage={this.state.growPercentage} />
 				<main>
 					<Home />
 					<Content id={"about-me"} title={"about me"}>
