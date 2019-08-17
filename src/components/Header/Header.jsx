@@ -3,6 +3,8 @@ import jump from 'jump.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
+import CV from "../../assets/konstantin_zlatkov_cv_2019.pdf";
+
 import './Header.scss';
 
 class Header extends React.Component {
@@ -30,9 +32,9 @@ class Header extends React.Component {
                     <a className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#projects")} id="">projects</a>
                     <a className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#contact")} id="">contact</a>
                     <FontAwesomeIcon id="collapsed-menu" icon={faBars} />
-                    <button id="resume-button" className="outlined-button">
+                    <a href={CV} target="_blank" id="resume-button" className="outlined-button">
                         resume
-                    </button>
+                    </a>
                 </nav>
             </div>
         );

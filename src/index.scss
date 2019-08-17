@@ -42,8 +42,15 @@ body {
   font-size: 2em;
   cursor: pointer;
   background-color: transparent;
-  padding: 0.4em;
+  padding: 0.3em 0.7em;
   font-weight: 600;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.outlined-button:hover {
+  color: white;
+  background-color: $color-accent-bright;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 h1 {

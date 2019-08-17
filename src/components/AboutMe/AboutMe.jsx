@@ -7,7 +7,7 @@ const AboutMe = (props) => {
     return (
         <div className="row">
             <div className="col">
-                <div id="profile-image-container">
+                <div id="profile-image-container" data-aos="zoom-out">
                     <img id="profile-image" src={profileImage} />
                     <div id="profile-image-border">
 

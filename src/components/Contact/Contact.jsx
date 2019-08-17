@@ -10,6 +10,10 @@ const Contact = (props) => {
             company, who are willing to sponsor me after the 3-year
             duration of the program.
             </p>
+            <div>
+                <button></button>
+                <button></button>
+            </div>
         </div>
     );
 };

@@ -24,6 +24,10 @@
     transition: 0.15s all ease;
 }
 
+#home-button:hover {
+    padding: 2em !important;
+}
+
 #navigation {
     padding-right: 4em;
     display: flex;
@@ -38,12 +42,18 @@
     display: block;
 }
 
+.nav-link:hover:after {
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
 .nav-link:after {
     content: "";
     position: absolute;
     width: 2.5em;
     bottom: -3px;
     left: 0px;
+    transition: width 0.3s ease;
     border-bottom: 4px solid $color-accent-bright;
 }
 
