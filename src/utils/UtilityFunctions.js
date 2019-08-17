@@ -1,5 +1,6 @@
 export const getTransitionPercentage = () => {
-    var percentageGrow = 1 - (window.pageYOffset / getWindowDimensions());
+    var { height } = getWindowDimensions();
+    var percentageGrow = 1 - (window.pageYOffset / height);
     if(percentageGrow < 0 ) {
         return 0;
     }
@@ -8,6 +9,9 @@ export const getTransitionPercentage = () => {
 }
 
 export const getWindowDimensions = () => {
-    const { innerHeight: height } = window;
-    return height;
+    const { innerHeight: height, innerWidth: width } = window;
+    return {
+        height,
+        width
+    };
 };

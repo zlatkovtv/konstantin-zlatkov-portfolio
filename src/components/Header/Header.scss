@@ -26,6 +26,8 @@
 
 #navigation {
     padding-right: 4em;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link {
@@ -33,17 +35,37 @@
     color: $color-primary;
     position: relative;
     cursor: pointer;
+    display: block;
 }
 
 .nav-link:after {
     content: "";
     position: absolute;
     width: 2.5em;
-    bottom: 0px;
+    bottom: -3px;
     left: 0px;
     border-bottom: 4px solid $color-accent-bright;
 }
 
 #resume-button {
     margin-left: 2rem;
+}
+
+#collapsed-menu {
+    color: $color-accent-bright;
+    width: 3em;
+    height: 3em;
+    display: none;
+}
+
+@media(max-width: $media-breakpoint) {
+    #collapsed-menu {
+        display: block;
+    }
+}
+
+@media(max-width: $media-breakpoint) {
+    .nav-link {
+        display: none;
+    }
 }

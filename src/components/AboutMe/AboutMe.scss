@@ -30,7 +30,7 @@
     margin-bottom: 3em;
 }
 
-@media(min-width: 1100px) {
+@media(min-width: $media-breakpoint) {
     .col {
         max-width: 50%;
         flex: 0 0 50%;
@@ -42,7 +42,7 @@
     }
 }
 
-@media(min-width: 0px) and (max-width: 1100px) {
+@media(min-width: 0px) and (max-width: $media-breakpoint) {
     .col {
         width: 100%;
         float: left;

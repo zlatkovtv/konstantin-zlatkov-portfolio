@@ -22,19 +22,19 @@ const AboutMe = (props) => {
                     my Master's program at CSULB at the end of 2019.</p>
                 <p className="black">Technologies I work with:</p>
 
-                <div class="grid">
-                    <div class="cell">React</div>
-                    <div class="cell">.NET</div>
-                    <div class="cell">Android</div>
-                    <div class="cell">Angular</div>
-                    <div class="cell">Java</div>
-                    <div class="cell">Adobe XD</div>
-                    <div class="cell">Vue</div>
-                    <div class="cell">SQL</div>
-                    <div class="cell">InDesign</div>
-                    <div class="cell">Node.js</div>
-                    <div class="cell">MongoDB</div>
-                    <div class="cell">Illustrator</div>
+                <div className="grid">
+                    <div className="cell">React</div>
+                    <div className="cell">.NET</div>
+                    <div className="cell">Android</div>
+                    <div className="cell">Angular</div>
+                    <div className="cell">Java</div>
+                    <div className="cell">Adobe XD</div>
+                    <div className="cell">Vue</div>
+                    <div className="cell">SQL</div>
+                    <div className="cell">InDesign</div>
+                    <div className="cell">Node.js</div>
+                    <div className="cell">MongoDB</div>
+                    <div className="cell">Illustrator</div>
                 </div>
             </div>
         </div>
