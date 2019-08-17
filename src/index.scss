@@ -44,13 +44,13 @@ body {
   background-color: transparent;
   padding: 0.3em 0.7em;
   font-weight: 600;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .outlined-button:hover {
   color: white;
   background-color: $color-accent-bright;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1 {

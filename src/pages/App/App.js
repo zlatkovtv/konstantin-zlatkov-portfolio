@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Content from '../../components/Content/Content';
 import Home from '../../components/Home/Home';
@@ -24,10 +24,10 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<Router>
-					<Background growPercentage={this.state.growPercentage} />
-					<Header growPercentage={this.state.growPercentage} />
-					<Sidebar />
+				<Background growPercentage={this.state.growPercentage} />
+				<Header growPercentage={this.state.growPercentage} />
+				<Sidebar />
+				<main>
 					<Home />
 					<Content id={"about-me"} title={"about me"}>
 						<AboutMe />
@@ -38,7 +38,7 @@ class App extends React.Component {
 					<Content id={"contact"} title={"get in touch"} fullscreen>
 						<Contact />
 					</Content>
-				</Router>
+				</main>
 			</div>
 		);
 	}

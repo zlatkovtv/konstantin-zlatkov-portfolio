@@ -22,9 +22,9 @@ class Projects extends React.Component {
         };
     }
     render() {
-        const repos = this.state.repos.map(repo => {
+        const repos = this.state.repos.map((repo, i) => {
             return (
-                <div className="repo" data-aos="fade-right">
+                <div className="repo" key={i} data-aos="fade-right">
                     <div>
                         <header className="repo-header">
                             <FontAwesomeIcon className="folder-icon" icon={faFolderOpen} />

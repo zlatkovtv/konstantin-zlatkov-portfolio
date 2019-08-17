@@ -18,7 +18,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div id="header">
+            <header id="header">
                 <div style={this.state.homeButtonStyle} id="home-button" onClick={() => this.jumpToTarget("#home")}>
                     <div className="text-medium black">
                         Konstantin
@@ -28,15 +28,15 @@ class Header extends React.Component {
                     </div>
                 </div>
                 <nav id="navigation">
-                    <a className="text-medium nav-link bold" style={this.state.linkStyle} onClick={() => this.jumpToTarget("#about-me")}>about me</a>
-                    <a className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#projects")} id="">projects</a>
-                    <a className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#contact")} id="">contact</a>
+                    <a href="#" className="text-medium nav-link bold" style={this.state.linkStyle} onClick={() => this.jumpToTarget("#about-me")}>about me</a>
+                    <a href="#" className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#projects")} id="">projects</a>
+                    <a href="#" className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#contact")} id="">contact</a>
                     <FontAwesomeIcon id="collapsed-menu" icon={faBars} />
                     <a href={CV} target="_blank" id="resume-button" className="outlined-button">
                         resume
                     </a>
                 </nav>
-            </div>
+            </header>
         );
     }
 

@@ -13,7 +13,7 @@ const Sidebar = (props) => {
     };
 
     return (
-        <div id="sidebar">
+        <aside id="sidebar">
             <div id="social-icons">
                 <FontAwesomeIcon icon={faLinkedin}
                     onClick={() => goToSocialMedia(linkedInLink)}
@@ -22,7 +22,7 @@ const Sidebar = (props) => {
                     onClick={() => goToSocialMedia(githubLink)}
                     className="social-media-icon" />
             </div>
-        </div>
+        </aside>
     );
 };
 
