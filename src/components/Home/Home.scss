@@ -8,8 +8,29 @@
     padding: 25vh 12vw;
 }
 
+@media screen and (min-width: $media-breakpoint-xs) and (max-width: $media-breakpoint) {
+    #home-content {
+        padding: 25vh 6vw;
+    }
+
+    #home {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: $media-breakpoint-xs) {
+    #home {
+        font-size: 0.8em;
+    }
+
+    #home-content {
+        padding: 25vh 0;
+    }
+}
+
 #ps-content {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+    text-align: right;
 }

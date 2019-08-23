@@ -24,6 +24,12 @@
     transition: 0.15s all ease;
 }
 
+@media screen and (max-width: $media-breakpoint-xs) {
+    #home-button {
+        display: none;
+    }
+}
+
 #home-button:hover {
     padding: 2em !important;
 }

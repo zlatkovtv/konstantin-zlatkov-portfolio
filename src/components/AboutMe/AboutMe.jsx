@@ -9,9 +9,6 @@ const AboutMe = (props) => {
             <div className="profile-container-inner">
                 <div id="profile-image-container" data-aos="zoom-out">
                     <img id="profile-image" src={profileImage} alt="profile" />
-                    <div id="profile-image-border">
-
-                    </div>
                 </div>
             </div>
             <div className="profile-container-inner">

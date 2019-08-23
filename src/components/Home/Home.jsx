@@ -3,7 +3,7 @@ import './Home.scss';
 
 const Home = (props) => {
     return (
-        <div className="fullscreen-container" id="home">
+        <div className="fullscreen" id="home">
             <div id="home-content">
                 <h1 id="main-title">
                     Software Engineer <br />

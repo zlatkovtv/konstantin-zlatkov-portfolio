@@ -6,10 +6,17 @@ import * as serviceWorker from './serviceWorker';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { render } from 'react-snapshot';
+
 AOS.init({
     once: true
 });
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(
+// render(
+    <App />, 
+    document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

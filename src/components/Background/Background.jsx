@@ -5,11 +5,12 @@ import './Background.scss';
 class Background extends React.Component {
     constructor(props) {
         super(props);
+        var gradientConstant = 50 * (1 - this.props.growPercentage);
         this.state = {
             style: {
-                width: "calc(100% - 4em * 1)",
-                marginTop: "6em",
-                backgroundImage: `-webkit-linear-gradient(-20deg, #161616 50%, #242530 50%)`
+                width: `calc(100% - 4em * ${this.props.growPercentage})`,
+                    marginTop: `calc(6em * ${this.props.growPercentage})`,
+                    backgroundImage: `-webkit-linear-gradient(-20deg, #161616 ${50 + gradientConstant}%, #242530 ${50 - gradientConstant}%)`
             }
         };
     }

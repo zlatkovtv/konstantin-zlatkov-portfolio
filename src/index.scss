@@ -66,13 +66,8 @@ p {
   line-height: 1.3;
 }
 
-.fullscreen-container {
+.fullscreen {
   height: 100vh;
-  margin: 0 4em;
-}
-
-.container {
-  margin: 0 4em;
 }
 
 h2 {
@@ -90,10 +85,25 @@ h3 {
 }
 
 .content {
-  padding: 10vh 6vw 0 12vw;
+  padding: 5vh 0;
 }
 
 .center {
   text-align: center;
 }
 
+main {
+  margin: 0 8em;
+}
+
+@media screen and (max-width: $media-breakpoint) {
+  main {
+    margin: 0 4em;
+  }
+}
+
+@media screen and (max-width: $media-breakpoint-xs) {
+  main {
+    margin: 0 2em;
+  }
+}

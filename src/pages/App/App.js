@@ -45,6 +45,7 @@ class App extends React.Component {
 
 	componentDidMount() {
 		window.addEventListener('scroll', this.handleScroll);
+		window.addEventListener('resize', this.handleScroll);
 	}
 
 	handleScroll = () => {

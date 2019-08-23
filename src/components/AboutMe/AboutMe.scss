@@ -1,25 +1,27 @@
 @import "../../variables.scss";
 
 #profile-image-container {
-    width: 100%;
-    height: 350px;
+    width: 80%;
+    position: relative;
 }
 
 #profile-image {
+    border-radius: $border-radius;
     z-index: 10;
     max-width:100%;
     max-height:100%;
-    border-radius: $border-radius;
 }
 
-#profile-image-border {
-    z-index: 0;
+#profile-image-container:after {
+    content: '';
+    z-index: -1;
     border-radius: $border-radius;
     border: 5px solid $color-accent-bright;
-    width: 314px;
-    height: 350px;
-    margin-top: -340px;
-    margin-left: 15px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .profile-container-inner:first-child {
@@ -30,7 +32,6 @@
     .profile-container-inner {
         max-width: 50%;
         flex: 0 0 50%;
-
     }
 }
 
@@ -41,21 +42,28 @@
     }
 }
 
-.grid {
-    display: flex;                       /* establish flex container */
-    flex-wrap: wrap;                     /* enable flex items to wrap */
-    justify-content: space-around;
-    
-  }
+@media(min-width: 0px) and (max-width: $media-breakpoint-xs) {
+    .cell {
+        width: 50%;
+    }
+}
+
   .cell {
     font-size: 1.5em;
-    flex: 0 0 32%;                       /* don't grow, don't shrink, width */
     margin: 0.5em auto;
     color: white;
+    display: inline-block;
   }
 
 #profile-container {
     display: flex;
+    overflow: auto;
+}
+
+@media(min-width: $media-breakpoint-xs) {
+    .cell {
+        width: 33.3333%;
+    }
 }
 
 
