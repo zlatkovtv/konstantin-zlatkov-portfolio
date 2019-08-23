@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Content = (props) => {
+const Section = (props) => {
     return (
-        <div id={props.id} className={props.fullscreen ? "fullscreen" : ""}>
+        <section id={props.id} className={props.fullscreen ? "fullscreen" : ""}>
             <div className="content">
                 <h2>{props.title}</h2>
                 {props.children}
             </div>
-        </div>
+        </section>
     );
 };
 
-export default Content;
+export default Section;

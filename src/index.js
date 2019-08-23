@@ -12,8 +12,8 @@ AOS.init({
     once: true
 });
 
-ReactDOM.render(
-// render(
+// ReactDOM.render(
+render(
     <App />, 
     document.getElementById('root')
 );

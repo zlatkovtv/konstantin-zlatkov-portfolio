@@ -1,7 +1,7 @@
 import React from 'react';
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import Content from '../../components/Content/Content';
+import Section from '../../components/Section/Section';
 import Home from '../../components/Home/Home';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import Projects from '../../components/Projects/Projects';
@@ -29,15 +29,15 @@ class App extends React.Component {
 				<Sidebar growPercentage={this.state.growPercentage} />
 				<main>
 					<Home />
-					<Content id={"about-me"} title={"about me"}>
+					<Section id={"about-me"} title={"about me"}>
 						<AboutMe />
-					</Content>
-					<Content id={"projects"} title={"projects"}>
+					</Section>
+					<Section id={"projects"} title={"projects"}>
 						<Projects />
-					</Content>
-					<Content id={"contact"} title={"get in touch"} fullscreen>
+					</Section>
+					<Section id={"contact"} title={"get in touch"} fullscreen>
 						<Contact />
-					</Content>
+					</Section>
 				</main>
 			</div>
 		);
