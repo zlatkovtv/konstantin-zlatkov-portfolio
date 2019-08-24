@@ -3,6 +3,7 @@
 #profile-image-container {
     width: 80%;
     position: relative;
+    max-width: 375px;
 }
 
 #profile-image {
@@ -48,12 +49,12 @@
     }
 }
 
-  .cell {
+.cell {
     font-size: 1.5em;
     margin: 0.5em auto;
     color: white;
     display: inline-block;
-  }
+}
 
 #profile-container {
     display: flex;
