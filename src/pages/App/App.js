@@ -9,6 +9,7 @@ import Contact from '../../components/Contact/Contact';
 import Header from '../../components/Header/Header';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import Background from '../../components/Background/Background';
+import Footer from '../../components/Footer/Footer';
 import './App.css';
 
 import { getTransitionPercentage } from "../../utils/UtilityFunctions";
@@ -39,6 +40,7 @@ class App extends React.Component {
 						<Contact />
 					</Section>
 				</main>
+				<Footer />
 			</div>
 		);
 	}

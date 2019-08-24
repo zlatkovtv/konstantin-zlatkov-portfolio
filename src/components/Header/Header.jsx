@@ -24,11 +24,14 @@ class Header extends React.Component {
         return (
             <header id="header">
                 <div style={this.state.homeButtonStyle} id="home-button" onClick={() => this.jumpToTarget("#home")}>
-                    <div className="text-medium black">
+                    <div className="text-medium black big">
                         Konstantin
                     </div>
-                    <div className="text-medium black">
+                    <div className="text-medium black big">
                         Zlatkov
+                    </div>
+                    <div className="text-medium black small">
+                        KZ
                     </div>
                 </div>
                 <FontAwesomeIcon id="menu-icon" onClick={this.expandMenu} icon={faBars} />

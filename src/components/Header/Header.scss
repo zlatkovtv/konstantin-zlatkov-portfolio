@@ -26,8 +26,20 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: $media-breakpoint-xs) {
+#home-button .small {
+    display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: $media-breakpoint-xs) {
     #home-button {
+        left: 0px;
+    }
+
+    #home-button .small {
+        display: block;
+    }
+
+    #home-button .big {
         display: none;
     }
 }

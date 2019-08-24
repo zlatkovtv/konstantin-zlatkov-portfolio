@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+#footer {
+   background-color: $color-secondary;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 1em;
+   
+}
+
+#footer a:hover {
+    color: $color-accent-bright;
+    transition: color 0.3s ease;
+}
+
+#footer a {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.footer-text {
+    margin: 5px 0;
+}
