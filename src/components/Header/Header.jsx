@@ -12,7 +12,11 @@ class Header extends React.Component {
         super(props);
         this.state = {
             linkStyle: null,
-            homeButtonStyle: null
+            homeButtonStyle: null,
+            isModalOpen: false,
+            visible: {
+                display: "block"
+            }
         }
     }
 
@@ -27,21 +31,44 @@ class Header extends React.Component {
                         Zlatkov
                     </div>
                 </div>
+                <FontAwesomeIcon id="menu-icon" onClick={this.expandMenu} icon={faBars} />
                 <nav id="navigation">
                     <a href="#" className="text-medium nav-link bold" style={this.state.linkStyle} onClick={() => this.jumpToTarget("#about-me")}>about me</a>
                     <a href="#" className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#projects")} id="">projects</a>
                     <a href="#" className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#contact")} id="">contact</a>
-                    <FontAwesomeIcon id="collapsed-menu" icon={faBars} />
                     <a href={CV} target="_blank" id="resume-button" className="outlined-button">
                         resume
                     </a>
                 </nav>
+                <div id="responsive-menu-modal" onClick={this.closeModal} style={this.state.isModalOpen? this.state.visible: null}>
+                    <nav id="navigation-responsive">
+                        <a href="#" className="text-medium nav-link bold" style={this.state.linkStyle} onClick={() => this.jumpToTarget("#about-me")}>about me</a>
+                        <a href="#" className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#projects")} id="">projects</a>
+                        <a href="#" className="text-medium nav-link bold" style={this.state.linkStyle}onClick={() => this.jumpToTarget("#contact")} id="">contact</a>
+                        <a href={CV} target="_blank" id="resume-button" className="outlined-button">
+                            resume
+                        </a>
+                    </nav>
+                </div>
             </header>
         );
     }
 
     jumpToTarget = (target) => {
         jump(target);
+    }
+
+    expandMenu = () => {
+        this.setState({
+            isModalOpen: true
+        });
+    }
+
+    closeModal = (e) => {
+        e.preventDefault();
+        this.setState({
+            isModalOpen: false
+        });
     }
 
     componentDidUpdate(prevProps) {
