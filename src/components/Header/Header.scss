@@ -101,7 +101,7 @@
     border-bottom: 4px solid $color-accent-bright;
 }
 
-#resume-button {
+.outlined-button {
     margin-left: 2rem;
 }
 
@@ -123,13 +123,19 @@
     }
 }
 
+@media screen and (min-width:0px) and (max-width: $media-breakpoint-xs) {
+    #header {
+        padding: 0 2em;
+    }
+}
+
 #navigation-responsive .nav-link {
     color: white;
     display: block;
     margin: 1em;
 }
 
-#navigation-responsive #resume-button {
+#navigation-responsive .outlined-button {
     margin: 1em;
     display: block;
 }
