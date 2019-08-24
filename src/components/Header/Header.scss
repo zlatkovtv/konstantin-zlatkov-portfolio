@@ -9,7 +9,6 @@
     height: 6em;
     justify-content: flex-end;
     align-items: center;
-    cursor: pointer;
 }
 
 #home-button {
@@ -22,6 +21,7 @@
     padding: 2em;
     transform: scale(1); /* you need a scale here to allow it to transition in both directions */
     transition: 0.15s all ease;
+    cursor: pointer;
 }
 
 @media screen and (max-width: $media-breakpoint-xs) {

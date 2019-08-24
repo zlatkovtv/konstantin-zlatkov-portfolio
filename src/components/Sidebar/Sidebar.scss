@@ -19,10 +19,11 @@
     height: auto;
     margin: 0 auto;
     padding: 25% 0;
+    transition: color 0.3s ease;
 }
 
 .social-media-icon:hover {
-    transition: color 0.5s ease;
+    transition: color 0.3s ease;
     color: $color-accent-bright;
 }
 
