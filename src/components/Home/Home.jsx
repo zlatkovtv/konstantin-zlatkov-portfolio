@@ -10,11 +10,11 @@ const Home = (props) => {
                     living and working in LA
                 </h1>
                 <p>
-                    Lorem ipsum skdfhaghus
+                    I build high-quality, scalable and functional web and mobile applications. 
                 </p>
             </div>
 
-            <h3 id="ps-content">P.S. I also design as a hobby.</h3>
+            <h3 id="ps-content">P.S. I also design for a hobby.</h3>
         </div>
     );
 };

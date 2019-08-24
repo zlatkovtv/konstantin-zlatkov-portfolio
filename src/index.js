@@ -6,14 +6,12 @@ import * as serviceWorker from './serviceWorker';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import { render } from 'react-snapshot';
-
 AOS.init({
     once: true
 });
 
-// ReactDOM.render(
-render(
+ReactDOM.render(
+// render(
     <App />, 
     document.getElementById('root')
 );

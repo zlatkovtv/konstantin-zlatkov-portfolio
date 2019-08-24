@@ -1,5 +1,4 @@
 import React from 'react';
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Section from '../../components/Section/Section';
 import Home from '../../components/Home/Home';
