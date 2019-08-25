@@ -6,11 +6,12 @@ const Home = (props) => {
         <div className="fullscreen" id="home">
             <div id="home-content">
                 <h1 id="main-title">
-                    Software Engineer <br />
-                    living and working in LA
+                    Engineer. <br />
+                    Designer. <br />
+                    Enthusiast. <br />
                 </h1>
                 <p>
-                    I build high-quality, scalable and functional web and mobile applications. 
+                    I build high-quality, scalable and functional applications for mobile and the web. 
                 </p>
             </div>
 

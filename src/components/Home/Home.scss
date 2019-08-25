@@ -5,12 +5,12 @@
 }
 
 #home-content {
-    padding: 25vh 12vw;
+    padding: 20vh 12vw;
 }
 
 @media screen and (min-width: $media-breakpoint-xs) and (max-width: $media-breakpoint) {
     #home-content {
-        padding: 25vh 6vw;
+        padding: 20vh 6vw;
     }
 
     #home {
@@ -24,7 +24,7 @@
     }
 
     #home-content {
-        padding: 25vh 0;
+        padding: 20vh 0;
     }
 }
 
