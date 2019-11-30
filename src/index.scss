@@ -55,7 +55,7 @@ body {
 
 h1 {
   font-family: $font-title;
-  font-size: 6em;
+  font-size: 5.3em;
   font-weight: 900;
   color: $color-accent-bright;
 }
@@ -93,7 +93,7 @@ h3 {
 }
 
 main {
-  overflow-x: auto;
+  overflow-x: visible;
   margin: 0 8em;
 }
 
@@ -109,6 +109,6 @@ main {
   }
 
   h1 {
-    font-size: 5em;
+    font-size: 4em;
   }
 }

@@ -15,14 +15,13 @@ const AboutMe = (props) => {
                 <p>Hey there! I'm Konstantin, a Software Engineer
                     based in Los Angeles. I develop functional websites
                     with beautiful UIs and build stable and modern APIs.</p>
-                <p>I moved from Bulgaria in 2018 and will graduate  from
-                    my Master's program at CSULB at the end of 2019.</p>
+                <p>I will graduate from the Master's in Computer Science program at CSULB at the end of 2019.</p>
                 <p className="black">Technologies I work with:</p>
 
                 <div className="grid">
                     <div className="cell">React</div>
                     <div className="cell">.NET</div>
-                    <div className="cell">Android</div>
+                    <div className="cell">Illustrator</div>
                     <div className="cell">Angular</div>
                     <div className="cell">Java</div>
                     <div className="cell">Adobe XD</div>
@@ -31,7 +30,7 @@ const AboutMe = (props) => {
                     <div className="cell">InDesign</div>
                     <div className="cell">Node.js</div>
                     <div className="cell">MongoDB</div>
-                    <div className="cell">Illustrator</div>
+                    <div className="cell">Android</div>
                 </div>
             </div>
         </div>
