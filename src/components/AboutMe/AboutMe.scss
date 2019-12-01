@@ -30,6 +30,10 @@
     margin-bottom: 3em;
 }
 
+.profile-container-inner p:first-child {
+    margin-top: 0px;
+}
+
 @media(min-width: $media-breakpoint) {
     .profile-container-inner {
         max-width: 50%;
@@ -79,4 +83,31 @@
     #profile-container {
         display: block;
     }
+}
+
+#work-container {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.job-button {
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 0.5em 0.7em;
+    font-size: 1.5em;
+}
+
+.job-button:hover {
+    background-color: $color-accent-numb;
+}
+
+.job-button:focus {
+    background-color: $color-accent-bright;
+}
+
+#job-select li {
+    list-style-type:none;
+    border-left: 2px solid $color-accent-bright;
 }
