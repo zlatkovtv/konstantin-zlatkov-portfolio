@@ -14,10 +14,9 @@ const Contact = (props) => {
 
     return (
         <div className="center">
-           <p id="contact-text">I will be applying for OPT after I graduate
-            in December 2019. I am looking for a wonderful
-            company, who are willing to sponsor me after the 3-year
-            duration of the program.
+            <p id="contact-text">I have a
+ valid OPT work authorization starting from Feb 1st, 2020 and I am looking for a
+ wonderful company that is willing to sponsor me in the future.
             </p>
             <div>
                 <span className="contact-button" onClick={() => goToSocialMedia(linkedInLink)}>
